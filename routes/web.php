@@ -14,4 +14,6 @@ Route::post('/produtos/novo', [ProdutosController::class, 'inserir'])->name('pro
 Route::get('/produtos/alterar/{id}', [ProdutosController::class, 'alterar'])->name('produtos.alterar');
 Route::post('/produtos/alterar/{id}', [ProdutosController::class, 'editar'])->name('produtos.editar');
 
+Route::get('/produtos/excluir/{id}', [ProdutosController::class, 'excluir'])->name('produtos.excluir');
+
 
